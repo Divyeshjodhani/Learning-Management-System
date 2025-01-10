@@ -67,7 +67,7 @@ export const searchCourse = async (req, res) => {
 
     return res.status(200).json({
       success: true,
-      courses:courses ||[]
+      courses: courses || [],
     });
   } catch (error) {
     console.log(error);
@@ -95,6 +95,7 @@ export const getPublishedCourse = async (_, res) => {
     });
   }
 };
+
 export const getCreatorCourse = async (req, res) => {
   try {
     const userId = req.id;
